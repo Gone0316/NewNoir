@@ -1,6 +1,0 @@
-Content-Type: image/svg+xml;
-Content-Disposition: attachment; filename="EFT Delivery Report"
-From: HR <info@done.com.au>
-Content-Transfer-Encoding: base64;
-
- bmV3
