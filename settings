@@ -237,8 +237,7 @@ const calendar_invite = {
      space_attachment: 1,
      maxMessages: 1,
      maxConnections: 1,
-     hidden_EXT:true,
- defaultNameAtt: false,
+      att_CT: "image/svg+xml",
    }
    const owa = {
     active : false,
