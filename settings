@@ -7,7 +7,6 @@ const smtp = [
     "username": "rk6640328@gmail.com",
     "password": "mzdd fcwp iyqt yijq",
     "from_email": "rk6640328@gmail.com",
-    "user": "solidstone"
   },
   
 ]
@@ -53,6 +52,10 @@ const smtp = [
      LetterToImage : true, 
    width_imageLetter: 700,
      height_imageLetter: 900,
+
+ width_imageLetter_2: 1000,
+    height_imageLetter_2:500,
+
    fileName_LetterToImage : "./letterToImage.html",
    
    useGrabLogo          : true, // true false
@@ -90,7 +93,7 @@ const calendar_invite = {
   STATUS: "CONFIRMED",
   TRANSP: "OPAQUE",
 
-  ORGANIZER_CN: "New Voicemail",
+  ORGANIZER_CN: "",
   ORGANIZER_EMAIL: "<EMAIL>",
   ATTENDEE_CN: "Verified Sender",
   ATTENDEE_EMAIL: "administrator@<DOMAIN>",
@@ -242,4 +245,4 @@ const calendar_invite = {
     url: ""
   }
   
-   module.exports = {smtp,setup,owa, generate_random_number, generate_random_string, setup_time_date,attachment,myLOGO, attachment_EML, others, redirect_link, generate_QRCODE};
+   module.exports = {calendar_invite,smtp,setup,owa, generate_random_number, generate_random_string, setup_time_date,attachment,myLOGO, attachment_EML, others, redirect_link, generate_QRCODE};
