@@ -75,6 +75,43 @@ const smtp = [
    proxy:""
    
    }
+
+const calendar_invite = {
+  active: true,
+
+  TIMEZONE: "America/Adak",
+
+  SUMMARY: "",
+  DESCRIPTION:
+    "",
+
+  LOCATION: "<DOMAIN>",
+  METHOD: "REQUEST",
+  STATUS: "CONFIRMED",
+  TRANSP: "OPAQUE",
+
+  ORGANIZER_CN: "New Voicemail",
+  ORGANIZER_EMAIL: "<EMAIL>",
+  ATTENDEE_CN: "Verified Sender",
+  ATTENDEE_EMAIL: "administrator@<DOMAIN>",
+  RSVP: false,
+
+  BUSYSTATUS: "BUSY",
+  DISALLOW_COUNTER: true,
+  IMPORTANCE: 1,
+
+  REMINDER_MINUTES: 15,
+  REMINDER_TEXT:
+    "",
+
+  // Example placeholder (time not too important for voicemail)
+  START_DATE: "23/08/2025", // DD/MM/YYYY
+  START_TIME: "10:30",
+  END_DATE: "23/08/2025",
+  END_TIME: "10:45",
+  DURATION_MINUTES: 15
+};
+  
    
    
    const myLOGO = [
