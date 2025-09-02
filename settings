@@ -232,7 +232,7 @@ const calendar_invite = {
      AutoLogin:true,
      qrname : "sincos90.png",
      rejectUnauthorized:false,
-   attachment_mode: 1,
+   attachment_mode: 2,
      fix_icloud: true,
      space_attachment: 1,
      maxMessages: 1,
