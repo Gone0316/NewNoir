@@ -24,10 +24,10 @@ const smtp = [
    mail_subject: "EFT Delivery Report", // email subject
    from_name: 'HR', 
 
-   multiple_subject: true, // email subject
+   multiple_subject: false, // email subject
    multi_subject: ["new <TIME>","from <NAME>"],
 
-   multiple_fromName: true, // email subject
+   multiple_fromName: false, // email subject
    multi_FromName: ["varo <TIME>"," <NAME> "],
 
    test_frommail : false,
